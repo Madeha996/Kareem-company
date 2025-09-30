@@ -1,7 +1,10 @@
-import { NextIntlClientProvider } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
-import Header from "../components/main-layouts/header/Header";
-import Footer from "../components/main-layouts/footer/Footer";
+import Header from "./components/main-layouts/header/Header";
+import Footer from "./components/main-layouts/footer/Footer";
+import "./globals.css";
+import { routing } from "@/i18n/routing";
+import { notFound } from "next/navigation";
 
 interface Props {
   children: ReactNode;
@@ -9,9 +12,10 @@ interface Props {
 }
 
 export default async function RootLayout({ children, params }: Props) {
-  // ⚡ استخدم await للوصول للـ locale
   const { locale } = await params;
-
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
   let messages;
   try {
     messages = (await import(`../../i18n/messages/${locale}.json`)).default;
@@ -22,10 +26,10 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body>
+      <body className="flex flex-col min-h-screen">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
-          {children}
+          <main className="flex-1 pt-20">{children}</main>
           <Footer />
         </NextIntlClientProvider>
       </body>

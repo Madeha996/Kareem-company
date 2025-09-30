@@ -1,4 +1,11 @@
 {
+  "General": {
+    "home": "Home",
+    "about": "About",
+    "news": "News",
+    "services": "Services",
+    "suppliers": "Suppliers"
+  },
   "Home": {
     "welcome": "Welcome to my portfolio!"
   }
