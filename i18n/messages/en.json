@@ -1,0 +1,30 @@
+{
+  "General": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "news": "News",
+    "services": "Services",
+    "suppliers": "Suppliers",
+    "branches": "Branches"
+  },
+  "Home": {
+    "welcome": "Welcome to my portfolio!"
+  },
+  "About": {
+    "title": "About Us",
+    "description": "We are a company that provides awesome services."
+  },
+  "Products": {
+    "title": "Products",
+    "description": "Our products."
+  },
+  "Suppliers": {
+    "title": "Suppliers",
+    "description": "Our Suppliers."
+  },
+  "Branches": {
+    "title": "Branches",
+    "description": "Our Branches."
+  }
+}
