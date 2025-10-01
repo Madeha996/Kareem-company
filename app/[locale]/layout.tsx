@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -17,18 +16,22 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: "Kareem company",
-  description: "Insights on  creativity from a thought leaader",
+  description: "Insights on creativity from a thought leader",
 };
-interface Props {
-  children: ReactNode;
-  params: { locale: string };
-}
 
-export default async function RootLayout({ children, params }: Props) {
-  const { locale } = params;
+export default async function RootLayout({
+  children,
+  params,
+}: {
+  children: React.ReactNode;
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
+
   let messages;
   try {
     messages = (await import(`../../i18n/messages/${locale}.json`)).default;

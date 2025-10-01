@@ -29,12 +29,12 @@ export default function MobileNavigtaion() {
           <div className="flex flex-col space-y-4 mt-8 p-8">
             {navItems.map((item) => (
               <Link
-                key={item.name}
+                key={item.label}
                 href={item.href}
                 className="text-lg font-medium text-foreground hover:text-primary transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
-                {item.name}
+                {item.label}
               </Link>
             ))}
           </div>
