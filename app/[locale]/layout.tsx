@@ -1,10 +1,10 @@
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { ReactNode } from "react";
-import Header from "./components/main-layouts/header/Header";
-import Footer from "./components/main-layouts/footer/Footer";
-import "./globals.css";
+import Header from "../../components/main-layouts/header/Header";
+import Footer from "../../components/main-layouts/footer/Footer";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import "./globals.css";
 
 interface Props {
   children: ReactNode;
