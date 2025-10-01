@@ -9,7 +9,7 @@
     "branches": "Branches"
   },
   "Home": {
-    "welcome": "Welcome to my portfolio!"
+    "welcome": "Welcome to my kareem-company!"
   },
   "About": {
     "title": "About Us",
@@ -17,7 +17,7 @@
   },
   "Products": {
     "title": "Products",
-    "description": "Our products."
+    "description": "Our Products."
   },
   "Suppliers": {
     "title": "Suppliers",
@@ -26,5 +26,13 @@
   "Branches": {
     "title": "Branches",
     "description": "Our Branches."
+  },
+  "News": {
+    "title": "News",
+    "description": "Last News"
+  },
+  "Privacy": {
+    "title": "Privacy",
+    "description": "Privacy"
   }
 }

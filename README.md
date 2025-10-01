@@ -1,8 +1,8 @@
-# Animated Portfolio
+# Animated Kareem-company
 
 ## Description
 
-This is an animated portfolio built with Next.js 15 and TypeScript, styled with Tailwind CSS v4, and enhanced with Framer Motion animations.
+This is an animated website built with Next.js 15 and TypeScript, styled with Tailwind CSS v4, and enhanced with Framer Motion animations.
 
 ## Usage
 

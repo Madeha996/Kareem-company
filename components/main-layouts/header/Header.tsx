@@ -2,7 +2,7 @@
 
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
-import LanguageDropdown from "./LanguageDropdown";
+import LanguageDropdown from "../../ui/LanguageDropdown";
 import ContactUsBtn from "./ContactUsBtn";
 
 export default function Header() {

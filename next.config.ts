@@ -4,4 +4,12 @@ const withNextIntl = createNextIntlPlugin("./i18n/request.ts");
 
 export default withNextIntl({
   reactStrictMode: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "images.pexels.com",
+      },
+    ],
+  },
 });
