@@ -9,7 +9,7 @@
     "branches": "الأفرع"
   },
   "Home": {
-    "welcome": "مرحباً بك في ملفي الشخصي!"
+    "welcome": "مرحباً بك في Kareemco!"
   },
   "About": {
     "title": "من نحن",
@@ -26,5 +26,13 @@
   "Branches": {
     "title": "الأفرع",
     "description": "أفرع شركتنا."
+  },
+  "News": {
+    "title": "الأخبار",
+    "description": "آخر الأخبار."
+  },
+  "Privacy": {
+    "title": "الخصوصية",
+    "description": "الخصوصية"
   }
 }
