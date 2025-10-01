@@ -1,0 +1,38 @@
+{
+  "General": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "news": "News",
+    "services": "Services",
+    "suppliers": "Suppliers",
+    "branches": "Branches"
+  },
+  "Home": {
+    "welcome": "Welcome to my kareem-company!"
+  },
+  "About": {
+    "title": "About Us",
+    "description": "We are a company that provides awesome services."
+  },
+  "Products": {
+    "title": "Products",
+    "description": "Our Products."
+  },
+  "Suppliers": {
+    "title": "Suppliers",
+    "description": "Our Suppliers."
+  },
+  "Branches": {
+    "title": "Branches",
+    "description": "Our Branches."
+  },
+  "News": {
+    "title": "News",
+    "description": "Last News"
+  },
+  "Privacy": {
+    "title": "Privacy",
+    "description": "Privacy"
+  }
+}

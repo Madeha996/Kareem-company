@@ -1,0 +1,38 @@
+{
+  "General": {
+    "home": "الصفحة الرئيسية",
+    "about": "حول",
+    "products": "المنتجات",
+    "news": "الأخبار",
+    "services": "الخدمات",
+    "suppliers": "الموردون",
+    "branches": "الأفرع"
+  },
+  "Home": {
+    "welcome": "مرحباً بك في Kareemco!"
+  },
+  "About": {
+    "title": "من نحن",
+    "description": "نحن شركة تقدم خدمات رائعة."
+  },
+  "Products": {
+    "title": "المنتجات",
+    "description": "منتجانتا."
+  },
+  "Suppliers": {
+    "title": "الموردون",
+    "description": "الموردون."
+  },
+  "Branches": {
+    "title": "الأفرع",
+    "description": "أفرع شركتنا."
+  },
+  "News": {
+    "title": "الأخبار",
+    "description": "آخر الأخبار."
+  },
+  "Privacy": {
+    "title": "الخصوصية",
+    "description": "الخصوصية"
+  }
+}
