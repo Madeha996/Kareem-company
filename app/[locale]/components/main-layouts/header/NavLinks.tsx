@@ -5,9 +5,10 @@ import { useParams } from "next/navigation";
 const links = [
   { label: "home", href: "home" },
   { label: "about", href: "about" },
-  { label: "services", href: "services" },
-  { label: "news", href: "news" },
+  { label: "products", href: "products" },
   { label: "suppliers", href: "suppliers" },
+  { label: "news", href: "news" },
+  { label: "branches", href: "branches" },
 ];
 
 export default function NavLinks() {
