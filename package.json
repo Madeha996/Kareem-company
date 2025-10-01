@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-portoflio",
+  "name": "nextjs-company-pro",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -32,6 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "tailwindcss": "^4",
+    "tw-animate-css": "^1.3.5",
     "typescript": "^5"
   }
 }
