@@ -1,15 +1,12 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import HeroSection from "@/components/HeroSection";
 
 export default function HomePage() {
-  const t = useTranslations("Home");
-
   return (
     <div className="min-h-screen bg-background">
       <main>
-        <h1>{t("welcome")}</h1>
-        {/* <HeroSection /> */}
+        <HeroSection />
         {/* <FeaturedSection /> */}
         {/* <CategoriesSection /> */}
         {/* <QuotesSection /> */}
