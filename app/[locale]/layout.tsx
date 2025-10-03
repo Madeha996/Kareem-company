@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { AR_Lang } from "@/lib/constants";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const playfair = Playfair_Display({
@@ -39,9 +40,14 @@ export default async function RootLayout({
     console.error(error);
     messages = (await import(`../../i18n/messages/en.json`)).default;
   }
+  console.log(locale);
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html
+      lang={locale}
+      dir={locale === AR_Lang ? "rtl" : "ltr"}
+      suppressHydrationWarning
+    >
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
         <ThemeProvider
           attribute="class"

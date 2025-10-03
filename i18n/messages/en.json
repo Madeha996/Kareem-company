@@ -6,7 +6,8 @@
     "news": "News",
     "services": "Services",
     "suppliers": "Suppliers",
-    "branches": "Branches"
+    "branches": "Branches",
+    "contact-us": "Contact"
   },
   "Home": {
     "welcome": "Welcome to my kareem-company!"
@@ -30,6 +31,10 @@
   "News": {
     "title": "News",
     "description": "Last News"
+  },
+  "Contact": {
+    "title": "Contact",
+    "description": "Contact Us"
   },
   "Privacy": {
     "title": "Privacy",

@@ -5,4 +5,8 @@ export const navItems = [
   { label: "suppliers", href: "suppliers" },
   { label: "news", href: "news" },
   { label: "branches", href: "branches" },
+  { label: "contact-us", href: "contact-us" },
 ];
+
+export const EN_Lang = "en";
+export const AR_Lang = "ar";
