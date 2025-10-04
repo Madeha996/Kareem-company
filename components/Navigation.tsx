@@ -31,10 +31,10 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={`/${locale}/${item.href}`}
-                className="relative group hover:text-blue-600 transition"
+                className="relative group hover:text-primary transition"
               >
                 {t(item.label)}
-                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
+                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-primary transition-all group-hover:w-full"></span>
               </Link>
             ))}
           </div>
