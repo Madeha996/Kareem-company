@@ -6,7 +6,8 @@
     "news": "الأخبار",
     "services": "الخدمات",
     "suppliers": "الموردون",
-    "branches": "الأفرع"
+    "branches": "الأفرع",
+    "contact-us": "Contact"
   },
   "Home": {
     "welcome": "مرحباً بك في Kareemco!"
@@ -30,6 +31,10 @@
   "News": {
     "title": "الأخبار",
     "description": "آخر الأخبار."
+  },
+  "Contact": {
+    "title": "تواصل",
+    "description": "تواصل معنا"
   },
   "Privacy": {
     "title": "الخصوصية",

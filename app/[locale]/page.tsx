@@ -1,18 +1,22 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContacSection";
+import HeroSection from "@/components/HeroSection";
+import ServicesSection from "@/components/ServicesSection";
+import SuppliersSection from "@/components/SuppliersSection";
 
 export default function HomePage() {
-  const t = useTranslations("Home");
-
   return (
     <div className="min-h-screen bg-background">
       <main>
-        <h1>{t("welcome")}</h1>
-        {/* <HeroSection /> */}
+        <HeroSection />
+        <AboutSection />
+        <ServicesSection />
+        <SuppliersSection />
+        <ContactSection />
         {/* <FeaturedSection /> */}
         {/* <CategoriesSection /> */}
-        {/* <QuotesSection /> */}
       </main>
     </div>
   );
