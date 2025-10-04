@@ -49,18 +49,18 @@ export default async function RootLayout({
       suppressHydrationWarning
     >
       <body className={`${inter.variable} ${playfair.variable} antialiased`}>
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            <Navigation />
-            {children}
-            <Footer />
-          </NextIntlClientProvider>
-        </ThemeProvider>
+        > */}
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          <Navigation />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
+        {/* </ThemeProvider> */}
       </body>
     </html>
   );
