@@ -39,7 +39,7 @@ export default function Navigation() {
             ))}
           </div>
           <div className="flex gap-1">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
             <LanguageDropdown />
           </div>
 
