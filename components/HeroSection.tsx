@@ -38,7 +38,7 @@ export default function HeroSection() {
             className="text-center lg:text-left"
           >
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-foreground leading-tight mb-6">
-              Our Company <span className="text-primary italic">KAREEMCO</span>
+              Our Company <span className="text-primary ">KAREEMCO</span>
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl">

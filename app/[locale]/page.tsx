@@ -1,8 +1,10 @@
 "use client";
 
 import AboutSection from "@/components/AboutSection";
+import ContactSection from "@/components/ContacSection";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
+import SuppliersSection from "@/components/SuppliersSection";
 
 export default function HomePage() {
   return (
@@ -11,9 +13,10 @@ export default function HomePage() {
         <HeroSection />
         <AboutSection />
         <ServicesSection />
+        <SuppliersSection />
+        <ContactSection />
         {/* <FeaturedSection /> */}
         {/* <CategoriesSection /> */}
-        {/* <QuotesSection /> */}
       </main>
     </div>
   );

@@ -1,90 +1,62 @@
 "use client";
 
 import * as motion from "motion/react-client";
-import Image from "next/image";
-
-const services = [
-  {
-    title: "Fertilizer Supply",
-    description:
-      "Providing high-quality, eco-friendly fertilizers designed to boost soil health and agricultural productivity.",
-    icon: "/file.svg",
-  },
-  {
-    title: "Agricultural Consulting",
-    description:
-      "Expert guidance on modern farming techniques, crop management, and sustainability strategies.",
-    icon: "/file.svg",
-  },
-  {
-    title: "Smart Irrigation Systems",
-    description:
-      "Innovative irrigation solutions to optimize water usage and improve crop yield efficiently.",
-    icon: "/file.svg",
-  },
-  {
-    title: "Soil Analysis",
-    description:
-      "Comprehensive soil testing and data-driven insights to ensure the best fertilizer and crop choices.",
-    icon: "/file.svg",
-  },
-];
+import { categories } from "@/lib/data";
+import { Badge } from "./ui/badge";
 
 export default function ServicesSection() {
-  const item = {
-    hidden: { opacity: 0, y: 40 },
-    show: { opacity: 1, y: 0 },
-  };
+  const allCategories = categories;
 
   return (
-    <section className="py-20 bg-primary-foreground flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden">
-      <motion.div
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={{
-          show: { transition: { staggerChildren: 0.2 } },
-        }}
-        className="max-w-7xl w-full"
-      >
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/30">
+      <div className="max-w-7xl mx-auto">
         {/* Section Title */}
-        <motion.h2
-          variants={item}
-          className="text-4xl font-bold text-center text-foreground mb-14"
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
         >
-          Our Services
-        </motion.h2>
+          <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
+            Our Services
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Explore our services designed to support sustainable agriculture and
+            enhance productivity using the latest techniques and solutions.
+          </p>
+        </motion.div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, i) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          {allCategories.map((category, index) => (
             <motion.div
-              key={i}
-              variants={item}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 10px 25px rgba(0,0,0,0.15)",
-              }}
-              transition={{ type: "spring", stiffness: 200, damping: 15 }}
-              className="p-8 bg-white border border-primary rounded-[20px_90px] shadow-md hover:shadow-lg transition-all duration-300 flex flex-col items-center text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
+              viewport={{ once: true }}
+              key={category.name}
             >
-              <Image
-                src={service.icon}
-                alt={service.title}
-                width={60}
-                height={60}
-                className="mb-6"
-              />
-              <h3 className="text-xl font-semibold text-foreground mb-3">
-                {service.title}
-              </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed">
-                {service.description}
-              </p>
+              <div className="group cursor-pointer">
+                <div className="bg-card rounded-lg p-6 text-center hover:shadow-lg transition-all duration-300 hover:scale-105 border border-border/50">
+                  <div className="mb-4">
+                    <div
+                      dangerouslySetInnerHTML={{ __html: category.icon }}
+                      className="w-10 h-10 mx-auto text-primary group-hover:scale-110 transition-transform duration-300"
+                    ></div>
+                  </div>
+                  <h3 className="font-semibold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">
+                    {category.name}
+                  </h3>
+                  <Badge variant="outline" className="text-xs">
+                    {category.count} posts
+                  </Badge>
+                </div>
+              </div>
             </motion.div>
           ))}
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 }
