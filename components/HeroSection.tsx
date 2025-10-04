@@ -20,7 +20,7 @@ export default function HeroSection() {
   };
 
   const images = [
-    { src: "/hero1.jpeg", radius: "20px 90px" },
+    { src: "/tractor.gif", radius: "20px 90px" },
     { src: "/hero2.jpeg", radius: "90px 20px" },
     { src: "/hero3.jpeg", radius: "90px 20px" },
     { src: "/hero4.jpeg", radius: "20px 90px" },
@@ -79,7 +79,7 @@ export default function HeroSection() {
                     variants={item}
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                    className="overflow-hidden w-60 h-60  border-primary"
+                    className="overflow-hidden w-70 h-70  border-primary"
                   >
                     <Image
                       src={img.src}
